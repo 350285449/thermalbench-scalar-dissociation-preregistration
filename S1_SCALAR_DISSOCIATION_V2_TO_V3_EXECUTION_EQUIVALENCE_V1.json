@@ -1,0 +1,15 @@
+{
+  "registered_v2_root_sha256": "C8CA019B54E042DB7BBA50B63DA31245F52FC28F7090CA2C2BC5D0C1AD21BEEA",
+  "scientific_input_equivalence": "PASS",
+  "schedule_equivalence": "PASS",
+  "analysis_equivalence": "PASS",
+  "model_configuration_equivalence": "PASS",
+  "scientific_request_bytes_equivalence": "PASS",
+  "only_authorization_layer_changed": "PASS",
+  "unchanged_scientific_sha256": {
+    "preregistration": "4B00DE096C299809F90FF4098BC78268D7ADE17D2CB0D62D17EB06453618EDC8",
+    "analysis": "1D69E7DEDB42257C94ACF3D6A2745740B16BE1B00364DDA8E0E52AE252E6F7F3",
+    "schedule": "129DDF6A8A0CB5B8E31AF420450A82C40AF3DABF8806DB327F343E4BB246C93E",
+    "configuration": "8A46F2F050421F37FAC0E15C27747E5D7A69A78C91E84CC2D101CAD23DCB8F79"
+  }
+}

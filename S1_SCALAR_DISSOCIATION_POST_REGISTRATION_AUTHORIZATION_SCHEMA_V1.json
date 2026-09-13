@@ -1,0 +1,6 @@
+{
+  "schema_version": "S1_SCALAR_DISSOCIATION_POST_REGISTRATION_AUTHORIZATION_SCHEMA_V1",
+  "authorization_schema_version": "S1_SCALAR_DISSOCIATION_POST_REGISTRATION_AUTHORIZATION_V1",
+  "required_fields": ["schema_version","authorization_status","original_registration_packet_sha256","registered_v2_freeze_root_sha256","amended_v3_freeze_root_sha256","preregistration_sha256","analysis_sha256","schedule_sha256","configuration_lock_sha256","original_immutable_registration_release_id","execution_amendment_release_id","execution_amendment_receipt_sha256","planned_request_count","planned_fixture_count","held_out_execution_allowed","authorization_created_utc"],
+  "validation": "Exact type- and value-bound comparison; duplicate keys, malformed JSON and absent fields fail closed before model startup or dispatch."
+}

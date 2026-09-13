@@ -1,0 +1,48 @@
+{
+  "basis": "No variance source for the new paired estimands exists; declared prospective SD grid, not development or synthetic-test variance.",
+  "conclusion": "N=240 is retained as the prospectively fixed resource-constrained design with transparent precision curves.",
+  "grid": [
+    {
+      "fixture_sd": 0.25,
+      "holm_worst_case_two_sided_mdes": 0.04257054194706319,
+      "se": 0.01613743060919757,
+      "unadjusted_ci95_half_width": 0.031629363994027236
+    },
+    {
+      "fixture_sd": 0.5,
+      "holm_worst_case_two_sided_mdes": 0.08514108389412638,
+      "se": 0.03227486121839514,
+      "unadjusted_ci95_half_width": 0.06325872798805447
+    },
+    {
+      "fixture_sd": 1,
+      "holm_worst_case_two_sided_mdes": 0.17028216778825275,
+      "se": 0.06454972243679027,
+      "unadjusted_ci95_half_width": 0.12651745597610894
+    },
+    {
+      "fixture_sd": 2,
+      "holm_worst_case_two_sided_mdes": 0.3405643355765055,
+      "se": 0.12909944487358055,
+      "unadjusted_ci95_half_width": 0.2530349119522179
+    },
+    {
+      "fixture_sd": 4,
+      "holm_worst_case_two_sided_mdes": 0.681128671153011,
+      "se": 0.2581988897471611,
+      "unadjusted_ci95_half_width": 0.5060698239044358
+    }
+  ],
+  "interactions": "secondary; paired shared-fixture N is at most 240",
+  "n_fixtures": 240,
+  "primary_family": [
+    "QWEN_OUTCOME",
+    "QWEN_QUERY",
+    "BONSAI_OUTCOME",
+    "BONSAI_QUERY",
+    "LLAMA_OUTCOME",
+    "LLAMA_QUERY"
+  ],
+  "schema_version": "S1_CONTINUOUS_POWER_OR_PRECISION_V1",
+  "status": "RESOURCE_CONSTRAINED_WITH_DECLARED_PRECISION"
+}

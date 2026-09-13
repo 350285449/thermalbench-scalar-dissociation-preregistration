@@ -1,0 +1,22 @@
+{
+  "schema_version": "S1_SCALAR_DISSOCIATION_PUBLIC_REGISTRATION_V1",
+  "title": "ThermalBench Scalar Dissociation — Prospective Three-Model Held-Out Preregistration V1",
+  "registration_packet_filename": "S1_SCALAR_DISSOCIATION_REGISTRATION_PACKET_V1.zip",
+  "registration_packet_sha256": "2A04B25E6A4C03597BB99873EC344F89E6F274EB5D26C9ED386B1CD1BFF96242",
+  "heldout_freeze_root_sha256": "C8CA019B54E042DB7BBA50B63DA31245F52FC28F7090CA2C2BC5D0C1AD21BEEA",
+  "final_preregistration_sha256": "4B00DE096C299809F90FF4098BC78268D7ADE17D2CB0D62D17EB06453618EDC8",
+  "primary_analysis_contract_sha256": "19DFA8A008BA5DA995124B6650811BEB2BE19566351A6E7A42A42A9E87716181",
+  "analysis_sha256": "1D69E7DEDB42257C94ACF3D6A2745740B16BE1B00364DDA8E0E52AE252E6F7F3",
+  "schedule_sha256": "129DDF6A8A0CB5B8E31AF420450A82C40AF3DABF8806DB327F343E4BB246C93E",
+  "fixture_manifest_sha256": "6EE688AF74CBF6525056F41A770829BD4BC8AB3F87D12F92E6393CE9B2C41621",
+  "configuration_lock_sha256": "8A46F2F050421F37FAC0E15C27747E5D7A69A78C91E84CC2D101CAD23DCB8F79",
+  "planned_independent_fixtures": 240,
+  "planned_heldout_requests": 9360,
+  "primary_test_count": 6,
+  "multiplicity_method": "Holm",
+  "family_wise_alpha": 0.05,
+  "held_out_execution_allowed": false,
+  "post_registration_authorization_created": false,
+  "held_out_requests_started": 0,
+  "prospective_status": "PUBLICATION_INTENDED_BEFORE_FIRST_HELDOUT_REQUEST"
+}

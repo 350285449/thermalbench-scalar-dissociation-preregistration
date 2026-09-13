@@ -1,0 +1,213 @@
+{
+  "cross_model_interactions": [
+    {
+      "formula": "QWEN:OUTCOME(fixture)-BONSAI:OUTCOME(same fixture)",
+      "id": "QWEN_MINUS_BONSAI_OUTCOME",
+      "status": "SECONDARY"
+    },
+    {
+      "formula": "QWEN:OUTCOME(fixture)-LLAMA:OUTCOME(same fixture)",
+      "id": "QWEN_MINUS_LLAMA_OUTCOME",
+      "status": "SECONDARY"
+    },
+    {
+      "formula": "BONSAI:OUTCOME(fixture)-LLAMA:OUTCOME(same fixture)",
+      "id": "BONSAI_MINUS_LLAMA_OUTCOME",
+      "status": "SECONDARY"
+    },
+    {
+      "formula": "QWEN:QUERY(fixture)-BONSAI:QUERY(same fixture)",
+      "id": "QWEN_MINUS_BONSAI_QUERY",
+      "status": "SECONDARY"
+    },
+    {
+      "formula": "QWEN:QUERY(fixture)-LLAMA:QUERY(same fixture)",
+      "id": "QWEN_MINUS_LLAMA_QUERY",
+      "status": "SECONDARY"
+    },
+    {
+      "formula": "BONSAI:QUERY(fixture)-LLAMA:QUERY(same fixture)",
+      "id": "BONSAI_MINUS_LLAMA_QUERY",
+      "status": "SECONDARY"
+    }
+  ],
+  "family_wise_alpha": 0.05,
+  "missingness_policy": "All planned identities reported; FINALIZED_VALID finite members only; dispatched/potentially dispatched identities are never retried or imputed; zero eligible fixtures is NON_ESTIMABLE.",
+  "multiplicity_method": "HOLM",
+  "primary_test_count": 6,
+  "primary_test_ids": [
+    "QWEN_OUTCOME",
+    "QWEN_QUERY",
+    "BONSAI_OUTCOME",
+    "BONSAI_QUERY",
+    "LLAMA_OUTCOME",
+    "LLAMA_QUERY"
+  ],
+  "schema_version": "S1_PRIMARY_ANALYSIS_CONTRACT_V1",
+  "secondary": [
+    "categorical AFFINE",
+    "ACTION_MATCH",
+    "OUTCOME_MATCH",
+    "QUERY_ECHO",
+    "OTHER",
+    "direct cross-model interactions"
+  ],
+  "tests": [
+    {
+      "alternative": "two-sided nonzero",
+      "bootstrap": "fixture percentile; canonical sorted IDs; seed 20260913; 2000 replicates",
+      "estimand": "OUTCOME",
+      "fixture_aggregation": "one fixture effect",
+      "formula": "counterfactual semantic-canonical CORE minus coherent semantic-canonical CORE",
+      "holm_family": [
+        "QWEN_OUTCOME",
+        "QWEN_QUERY",
+        "BONSAI_OUTCOME",
+        "BONSAI_QUERY",
+        "LLAMA_OUTCOME",
+        "LLAMA_QUERY"
+      ],
+      "missingness": "all required members FINALIZED_VALID and finite; otherwise ineligible",
+      "model_configuration": "qwen_q4_historical_file",
+      "non_estimable": "N=0, no numerical estimate/CI/p-value",
+      "null": "mean fixture effect = 0",
+      "pairing": "fixture_id + model_configuration_id + seed_id",
+      "raw_alpha": 0.05,
+      "raw_p": "two-sided normal approximation of fixture effects",
+      "response_field": "arithmetic mean of two finite forecast values",
+      "seed_aggregation": "arithmetic mean within fixture",
+      "test_id": "QWEN_OUTCOME",
+      "unit": "independent fixture"
+    },
+    {
+      "alternative": "two-sided nonzero",
+      "bootstrap": "fixture percentile; canonical sorted IDs; seed 20260913; 2000 replicates",
+      "estimand": "QUERY",
+      "fixture_aggregation": "one fixture effect",
+      "formula": "mean over four variants of QUERY_EXTENSION list B minus list A",
+      "holm_family": [
+        "QWEN_OUTCOME",
+        "QWEN_QUERY",
+        "BONSAI_OUTCOME",
+        "BONSAI_QUERY",
+        "LLAMA_OUTCOME",
+        "LLAMA_QUERY"
+      ],
+      "missingness": "all required members FINALIZED_VALID and finite; otherwise ineligible",
+      "model_configuration": "qwen_q4_historical_file",
+      "non_estimable": "N=0, no numerical estimate/CI/p-value",
+      "null": "mean fixture effect = 0",
+      "pairing": "fixture_id + model_configuration_id + seed_id",
+      "raw_alpha": 0.05,
+      "raw_p": "two-sided normal approximation of fixture effects",
+      "response_field": "arithmetic mean of two finite forecast values",
+      "seed_aggregation": "arithmetic mean within fixture",
+      "test_id": "QWEN_QUERY",
+      "unit": "independent fixture"
+    },
+    {
+      "alternative": "two-sided nonzero",
+      "bootstrap": "fixture percentile; canonical sorted IDs; seed 20260913; 2000 replicates",
+      "estimand": "OUTCOME",
+      "fixture_aggregation": "one fixture effect",
+      "formula": "counterfactual semantic-canonical CORE minus coherent semantic-canonical CORE",
+      "holm_family": [
+        "QWEN_OUTCOME",
+        "QWEN_QUERY",
+        "BONSAI_OUTCOME",
+        "BONSAI_QUERY",
+        "LLAMA_OUTCOME",
+        "LLAMA_QUERY"
+      ],
+      "missingness": "all required members FINALIZED_VALID and finite; otherwise ineligible",
+      "model_configuration": "bonsai_q1_0",
+      "non_estimable": "N=0, no numerical estimate/CI/p-value",
+      "null": "mean fixture effect = 0",
+      "pairing": "fixture_id + model_configuration_id + seed_id",
+      "raw_alpha": 0.05,
+      "raw_p": "two-sided normal approximation of fixture effects",
+      "response_field": "arithmetic mean of two finite forecast values",
+      "seed_aggregation": "arithmetic mean within fixture",
+      "test_id": "BONSAI_OUTCOME",
+      "unit": "independent fixture"
+    },
+    {
+      "alternative": "two-sided nonzero",
+      "bootstrap": "fixture percentile; canonical sorted IDs; seed 20260913; 2000 replicates",
+      "estimand": "QUERY",
+      "fixture_aggregation": "one fixture effect",
+      "formula": "mean over four variants of QUERY_EXTENSION list B minus list A",
+      "holm_family": [
+        "QWEN_OUTCOME",
+        "QWEN_QUERY",
+        "BONSAI_OUTCOME",
+        "BONSAI_QUERY",
+        "LLAMA_OUTCOME",
+        "LLAMA_QUERY"
+      ],
+      "missingness": "all required members FINALIZED_VALID and finite; otherwise ineligible",
+      "model_configuration": "bonsai_q1_0",
+      "non_estimable": "N=0, no numerical estimate/CI/p-value",
+      "null": "mean fixture effect = 0",
+      "pairing": "fixture_id + model_configuration_id + seed_id",
+      "raw_alpha": 0.05,
+      "raw_p": "two-sided normal approximation of fixture effects",
+      "response_field": "arithmetic mean of two finite forecast values",
+      "seed_aggregation": "arithmetic mean within fixture",
+      "test_id": "BONSAI_QUERY",
+      "unit": "independent fixture"
+    },
+    {
+      "alternative": "two-sided nonzero",
+      "bootstrap": "fixture percentile; canonical sorted IDs; seed 20260913; 2000 replicates",
+      "estimand": "OUTCOME",
+      "fixture_aggregation": "one fixture effect",
+      "formula": "counterfactual semantic-canonical CORE minus coherent semantic-canonical CORE",
+      "holm_family": [
+        "QWEN_OUTCOME",
+        "QWEN_QUERY",
+        "BONSAI_OUTCOME",
+        "BONSAI_QUERY",
+        "LLAMA_OUTCOME",
+        "LLAMA_QUERY"
+      ],
+      "missingness": "all required members FINALIZED_VALID and finite; otherwise ineligible",
+      "model_configuration": "llama31_q4km",
+      "non_estimable": "N=0, no numerical estimate/CI/p-value",
+      "null": "mean fixture effect = 0",
+      "pairing": "fixture_id + model_configuration_id + seed_id",
+      "raw_alpha": 0.05,
+      "raw_p": "two-sided normal approximation of fixture effects",
+      "response_field": "arithmetic mean of two finite forecast values",
+      "seed_aggregation": "arithmetic mean within fixture",
+      "test_id": "LLAMA_OUTCOME",
+      "unit": "independent fixture"
+    },
+    {
+      "alternative": "two-sided nonzero",
+      "bootstrap": "fixture percentile; canonical sorted IDs; seed 20260913; 2000 replicates",
+      "estimand": "QUERY",
+      "fixture_aggregation": "one fixture effect",
+      "formula": "mean over four variants of QUERY_EXTENSION list B minus list A",
+      "holm_family": [
+        "QWEN_OUTCOME",
+        "QWEN_QUERY",
+        "BONSAI_OUTCOME",
+        "BONSAI_QUERY",
+        "LLAMA_OUTCOME",
+        "LLAMA_QUERY"
+      ],
+      "missingness": "all required members FINALIZED_VALID and finite; otherwise ineligible",
+      "model_configuration": "llama31_q4km",
+      "non_estimable": "N=0, no numerical estimate/CI/p-value",
+      "null": "mean fixture effect = 0",
+      "pairing": "fixture_id + model_configuration_id + seed_id",
+      "raw_alpha": 0.05,
+      "raw_p": "two-sided normal approximation of fixture effects",
+      "response_field": "arithmetic mean of two finite forecast values",
+      "seed_aggregation": "arithmetic mean within fixture",
+      "test_id": "LLAMA_QUERY",
+      "unit": "independent fixture"
+    }
+  ]
+}

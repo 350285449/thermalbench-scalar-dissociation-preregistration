@@ -1,0 +1,132 @@
+{
+  "configurations": [
+    {
+      "assistant_generation_boundary": "Server chat-template-generated assistant prefix precedes request-level response_format grammar.",
+      "cache_state_isolation": "Fresh server process per configuration; no retries; sequential requests.",
+      "chat_template_sha256": "57f1fd00f0013a2be96aa79b857391f27e23df5b5f847072b524c897e24d0361",
+      "chat_template_source": "Embedded GGUF template, captured from /props before dispatch.",
+      "configuration_id": "qwen_q4_historical_file",
+      "context_size": 4096,
+      "failure_handling": "Persist PREPARED and STARTED markers; dispatch once; persist raw reply then FINALIZED record; no retry.",
+      "generation": {
+        "min_p": 0.0,
+        "seed": 20260913,
+        "temperature": 0.5,
+        "top_k": 20,
+        "top_p": 0.85
+      },
+      "max_tokens": 512,
+      "model_path": "C:\\Users\\Vlad\\study-a-local-runtime\\models\\Qwen3-8B-Q4_K_M.gguf",
+      "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "model_size_bytes": 5027783488,
+      "output_constraint": "Pinned runtime JSON schema; exactly forecast array of two unrestricted JSON numbers; no extra fields.",
+      "output_contract": "Per-request response_format.type=json_schema; V3 schema; no server-global grammar.",
+      "port": 18221,
+      "provenance": "Historical local Qwen3-8B Q4_K_M file reused without modification.",
+      "repository": null,
+      "request_timeout_seconds": 120,
+      "revision": null,
+      "role": "Newly collected baseline using the historical model file, not a historical bridge.",
+      "server_extra_args": [
+        "--chat-template-kwargs",
+        "{\"enable_thinking\":false}"
+      ],
+      "server_path": "C:\\Users\\Vlad\\Downloads\\thermalbench-study3-source-bound-design-draft\\s1_publication_supplement\\scalar_dissociation_development\\runtime\\llama-b10809\\llama-server.exe",
+      "server_sha256": "cb29f66008d4d73cce17cab2c2569ab318eb244b0b2ca2a15024b44d90dfcd3f",
+      "startup_timeout_seconds": 120,
+      "system_prompt": "You are a careful forecasting assistant. Follow the requested output format exactly.",
+      "thinking_mode": "disabled through embedded Qwen template kwargs"
+    },
+    {
+      "assistant_generation_boundary": "Server chat-template-generated assistant prefix precedes request-level response_format grammar.",
+      "cache_state_isolation": "Fresh server process per configuration; no retries; sequential requests.",
+      "chat_template_sha256": "30a75d10e60b57e2f260420163dd59720dacf9f63b9a8de070d65dd80a7b30f7",
+      "chat_template_source": "Embedded GGUF template, captured from /props before dispatch.",
+      "configuration_id": "bonsai_q1_0",
+      "context_size": 4096,
+      "failure_handling": "Persist PREPARED and STARTED markers; dispatch once; persist raw reply then FINALIZED record; no retry.",
+      "generation": {
+        "min_p": 0.0,
+        "seed": 20260913,
+        "temperature": 0.5,
+        "top_k": 20,
+        "top_p": 0.85
+      },
+      "max_tokens": 512,
+      "model_path": "C:\\Users\\Vlad\\Downloads\\thermalbench-study3-source-bound-design-draft\\s1_publication_supplement\\scalar_dissociation_development\\models\\bonsai\\Bonsai-8B-Q1_0.gguf",
+      "model_sha256": "284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54",
+      "model_size_bytes": 1158654496,
+      "output_constraint": "Pinned runtime JSON schema; exactly forecast array of two unrestricted JSON numbers; no extra fields.",
+      "output_contract": "Per-request response_format.type=json_schema; V3 schema; no server-global grammar.",
+      "port": 18222,
+      "provenance": "PrismML Bonsai-8B Q1_0 GGUF; README and Apache-2.0 notice retained in metadata/bonsai.",
+      "repository": "prism-ml/Bonsai-8B-gguf",
+      "request_timeout_seconds": 120,
+      "revision": "48516770dd04643643e9f9019a2a349cf26c5dbd",
+      "role": "Qwen3-architecture low-bit comparison, not a matched quantization.",
+      "server_extra_args": [
+        "--chat-template-kwargs",
+        "{\"enable_thinking\":false}"
+      ],
+      "server_path": "C:\\Users\\Vlad\\Downloads\\thermalbench-study3-source-bound-design-draft\\s1_publication_supplement\\scalar_dissociation_development\\runtime\\llama-b10809\\llama-server.exe",
+      "server_sha256": "cb29f66008d4d73cce17cab2c2569ab318eb244b0b2ca2a15024b44d90dfcd3f",
+      "startup_timeout_seconds": 120,
+      "system_prompt": "You are a careful forecasting assistant. Follow the requested output format exactly.",
+      "thinking_mode": "disabled through embedded Qwen-family template kwargs"
+    },
+    {
+      "assistant_generation_boundary": "Server chat-template-generated assistant prefix precedes request-level response_format grammar.",
+      "cache_state_isolation": "Fresh server process per configuration; no retries; sequential requests.",
+      "chat_template_sha256": "93c0e9aa3629bbd77e68dbc0f5621f6e6b23aa8d74b932595cdb8d64684526d7",
+      "chat_template_source": "Embedded GGUF template, captured from /props before dispatch.",
+      "configuration_id": "llama31_q4km",
+      "context_size": 4096,
+      "failure_handling": "Persist PREPARED and STARTED markers; dispatch once; persist raw reply then FINALIZED record; no retry.",
+      "generation": {
+        "min_p": 0.0,
+        "seed": 20260913,
+        "temperature": 0.5,
+        "top_k": 20,
+        "top_p": 0.85
+      },
+      "max_tokens": 512,
+      "model_path": "C:\\Users\\Vlad\\Downloads\\thermalbench-study3-source-bound-design-draft\\s1_publication_supplement\\scalar_dissociation_development\\models\\llama31\\Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+      "model_sha256": "7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c",
+      "model_size_bytes": 4920739232,
+      "output_constraint": "Pinned runtime JSON schema; exactly forecast array of two unrestricted JSON numbers; no extra fields.",
+      "output_contract": "Per-request response_format.type=json_schema; V3 schema; no server-global grammar.",
+      "port": 18223,
+      "provenance": "Meta original model family; Bartowski community imatrix Q4_K_M GGUF deployment. README retains Llama 3.1 Community License notice and conversion provenance.",
+      "repository": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+      "request_timeout_seconds": 120,
+      "revision": "bf5b95e96dac0462e2a09145ec66cae9a3f12067",
+      "role": "Different-family comparison.",
+      "server_extra_args": [],
+      "server_path": "C:\\Users\\Vlad\\Downloads\\thermalbench-study3-source-bound-design-draft\\s1_publication_supplement\\scalar_dissociation_development\\runtime\\llama-b10809\\llama-server.exe",
+      "server_sha256": "cb29f66008d4d73cce17cab2c2569ab318eb244b0b2ca2a15024b44d90dfcd3f",
+      "startup_timeout_seconds": 120,
+      "system_prompt": "You are a careful forecasting assistant. Follow the requested output format exactly.",
+      "thinking_mode": "not applicable to this embedded Llama template",
+      "upstream_linkage": "Original Meta revision is not inferred from the community GGUF repository and remains explicitly unresolved in this development lock."
+    }
+  ],
+  "generation_constraints": "context 4096; max_tokens 512; seed 20260913; temperature .5; top_p .85; top_k 20; min_p 0; no retries; fresh cache/state.",
+  "held_out_execution_allowed": false,
+  "output_schema_sha256": "6a02693c2e0df6e5dbe87fd8aa4f8f21601caee677dbe660a6fcc7b67c86970c",
+  "runtime": {
+    "backend": "CUDA; sequential loopback listeners only",
+    "cuda_build": "13.3 x64",
+    "distribution": "ggml-org/llama.cpp nightly b10809",
+    "relevant_dll_sha256": {
+      "ggml-cuda.dll": "d860635f2be8faf7590103851225afdf3f0b2e5e26012815017b0a0a087d4441",
+      "libomp.dll": "a12116ba72d1d6820407cf30be23da04ce79d6bb8a71a5ee71759c5a1faa6f1c",
+      "llama-server-impl.dll": "5db481a019e574d3bc99d8e32ed5005bbd56771ebec69883b37733fff6c48f3d",
+      "llama.dll": "50e60280f97845b049b3d228f89b4eb233808c9b59926e5e9c6cdc686aabfc43"
+    },
+    "server_path": "C:\\Users\\Vlad\\Downloads\\thermalbench-study3-source-bound-design-draft\\s1_publication_supplement\\scalar_dissociation_development\\runtime\\llama-b10809\\llama-server.exe",
+    "server_sha256": "cb29f66008d4d73cce17cab2c2569ab318eb244b0b2ca2a15024b44d90dfcd3f",
+    "source_commit": "5266f24da75dc449bd56cbed7addb9c8e4a6a73e"
+  },
+  "schema_version": "S1_HELDOUT_CONFIGURATION_LOCK_V1",
+  "source_lock": "V3 development configuration lock; copied without outcome-based alteration"
+}

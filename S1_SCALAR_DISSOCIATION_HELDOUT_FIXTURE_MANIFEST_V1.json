@@ -1,0 +1,9 @@
+{
+  "design_identifiability": "PASS",
+  "development_overlap": 0,
+  "fixture_count": 240,
+  "fixture_ids_sha256": "1b1e53f3254c4579b8a066d2ab8d2f60856e696bbd9fb80fe5b1fbdade6ce429",
+  "fixtures_sha256": "9f2a85d0a1144719450dc7fd5c2aaa4df9eb2c5377a4a1cf11cecc2773721e92",
+  "no_action_primary_contrast": true,
+  "seed_repetitions": 1
+}

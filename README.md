@@ -31,3 +31,14 @@ near-degenerate; the final prospective endpoints are controlled continuous
 OUTCOME and QUERY finite-difference effects. All bound endpoint, multiplicity,
 missingness, fixture, model, schedule, and analysis decisions preceded every
 held-out response.
+
+## Pre-Collection Materialization and Durable Execution Amendment V1
+
+This amendment preserves the original prospective preregistration and binds a
+V5 freeze of the exact 9,360 model-visible request bodies, output schema, and
+validated durable execution workflow. Hypotheses, primary estimands, fixtures,
+model panel, schedule, and final scientific analysis are unchanged. Collector
+validation occurred before request 1; the documented E25 event was
+validation-only and had no scientific impact. No held-out scientific request
+occurred before this amendment. The public binding metadata is in
+`S1_SCALAR_DISSOCIATION_PRECOLLECTION_MATERIALIZATION_AND_EXECUTION_AMENDMENT_V1.json`.

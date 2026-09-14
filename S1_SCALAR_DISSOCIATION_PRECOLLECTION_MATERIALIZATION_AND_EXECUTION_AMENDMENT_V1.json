@@ -1,0 +1,25 @@
+{
+  "schema_version": "S1_SCALAR_DISSOCIATION_PRECOLLECTION_MATERIALIZATION_AND_EXECUTION_PUBLIC_BINDING_V1",
+  "amendment_scope": "precollection materialization and durable execution",
+  "prior_preregistration": {
+    "immutable_release_id": 388052909,
+    "immutable_release_tag": "scalar-dissociation-prereg-v1-immutable",
+    "immutable_release_timestamp": "2026-09-13T22:20:11Z",
+    "execution_amendment_release_id": 388054294,
+    "execution_amendment_release_tag": "scalar-dissociation-execution-amendment-v1"
+  },
+  "v5_freeze_root_sha256": "ECBA4161A1CE626AA8E7F07BF0CB7BEAC89B4BDE11232C9579FEB1D5BE5F6F47",
+  "materialization_contract_sha256": "3AE03899E8EAA6F48F604AD11E458F49D4CEF513752DEAAC1C444288AEB1C817",
+  "final_materialization_audit_sha256": "21B1DEEABE7937F2643B2A7B6895D5469FB9F549C607D9216562EEF694B5693E",
+  "registration_packet_filename": "S1_SCALAR_DISSOCIATION_PRECOLLECTION_AMENDMENT_REGISTRATION_PACKET_V1.zip",
+  "registration_packet_sha256": "AE0DDBF92CA5FBAB529E840E2844479B522BEB7142E34BB44916BE7F7667AFCF",
+  "collector_validation_certificate_sha256": "615B1F4087A3A21380C86E9AF12A2A467DF9B1B450D3D252D2C1DFE6F065E9E1",
+  "durable_collector_sha256": "FC9BE7E73981BECC86770D0422763C835EA3A4698A9BF4C8C9AC95F48B0A98F4",
+  "server_manager_sha256": "4B24ED7E4BD76CC03240D7FCD5ACE38A0C8DB829BF8463ED39BA4BFC9498C2F5",
+  "scientific_inputs_unchanged": true,
+  "real_model_generation_calls": 0,
+  "held_out_requests_started": 0,
+  "started_real_heldout_identities": 0,
+  "raw_real_heldout_responses": 0,
+  "statement": "This amendment records a prospective V5 byte-level materialization and validated durable execution binding. It does not authorize or record any held-out scientific request."
+}

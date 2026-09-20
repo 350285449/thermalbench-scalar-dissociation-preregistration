@@ -1,6 +1,6 @@
 {
     "artifact": "S3_V4_BLOCKED_CONFIRMATORY_CAMPAIGN_TIMESTAMP_V1",
-  "blocked_campaign_amendment_sha256": "5b2334fc593cbcac1918853639b3683a397a197d6ea068e2cf39f5fa30bc0dc2",
+  "blocked_campaign_amendment_sha256": "f3624ae50b4758d1e71620eb25745b549b554d60e57a9ced4a22f2f1ef57c7ca",
     "blocked_execution_order_sha256": "93667c0a565fa6c55b30433dea0cccdad291612c8287ab6283a45543cba2a48a",
     "blocked_runner_v2_sha256": "839f3ea3da177c12db0b4cffce4d7b23651d7ff2ef4088f5c739afe28b0b6b37",
     "completion_seal_sha256": "e487b51eceffe597700d32ee9dc0bc9401969b1898ef935f5c9f34dd55d6d566",
@@ -15,6 +15,6 @@
     "population_root_sha256": "5f1ffd871228fec7e864fca168c9e391e6d65b31861c8e602d0c49a9b44ad26b",
     "qualified_bundle_v2_sha256": "73ecf3182aa15fc07811f21e7d479b5095d6da1cfcca75f8806e5bb86c59c97c",
     "real_blocked_campaign_requests_executed": 0,
-  "real_production_launcher_sha256": "d16e7822efe3c34ae34fb73d21b8ce472d86aef069467225f4e519e2a80a04b0",
+  "real_production_launcher_sha256": "8aaaf9f57c1e4c2891f11825bbd3181a35d9890d052508a3aa7f5ad037bb0b13",
     "synthetic_qualification_attestation_commit": "4d6c479e89ac109eeb1a4cef2d05b7f7db56b281"
 }
